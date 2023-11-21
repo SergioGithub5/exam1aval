@@ -1,4 +1,4 @@
-cat ../Alumnos.txt | awk '{print $5}' | grep -i "SI" | wc -l > si.txt
+cat ../Alumnos.txt | awk '{print $5}' | grep -n -i "SI" > si.txt
 mv si.txt > cd si
 cat ../Alumnos.txt | awk '{print $1, $2"-"$5}'
 cat ../Alumnos.txt | awk '{print $1, $2}' | grep -i "Gonzalez" | wc -l
