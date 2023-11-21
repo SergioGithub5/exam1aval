@@ -5,4 +5,5 @@ cat ../Alumnos.txt | awk '{print $1, $2}' | grep -i "Gonzalez" | wc -l
 cat ../Alumnos.txt | sed 's/Vicente/Pepe/g'
 cat ../Alumnos.txt | grep "201"
 cat ../Alumnos.txt  | awk '{print $1, $2}' | grep  ^J | sort -u
+cat ../du.txt | sort -h -r | head -n3
 
